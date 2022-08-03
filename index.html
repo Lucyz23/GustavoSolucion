@@ -8,15 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">Paleta de Cores</h1>
-    <div class="navbar">
-        <button class="btn">Reset</button>
-        <input type="color" class="colorPixel">
-        <input type="number" value="30" class="size">
+    <h1 id='title'>Paleta de Cores</h1>
+
+    <div id='color-palette'>
+      <button id='clear-board'>Limpar</button>
+      <input id='size-board' type='number' value='5' />
+
+      <div class='flex'>
+        <li class="color selected" style='background-color: black;' onclick='selectColor(this, "black");'></li>
+        <li class="color" style='background-color: purple;' onclick='selectColor(this, "purple");'></li>
+        <li class="color" style='background-color: pink;' onclick='selectColor(this, "pink");'></li>
+        <li class="color" style='background-color: aqua;' onclick='selectColor(this, "aqua");'></li>
+      </div>
     </div>
-    <div class="container">
+
+    <div id='pixel-board'></div>
+        </div>
+     </div>
     </div>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
